@@ -5,7 +5,12 @@ print("===================================")
 
 # Customer Details
 CustomerName = input("Enter Your Name: ")
-print(f"Hello {CustomerName}! HAPPY SHOPPING!")
+CustomerAge = float(input("Enter Your Age: "))
+if CustomerAge < 18:
+    print("Oops! You have to be at least 18 years to use this store, Thank you.")
+    exit()
+else:
+    print(f"Hello {CustomerName}! HAPPY SHOPPING!")
 
 # Product List (Dictionary)
 products = {
